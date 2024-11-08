@@ -25,40 +25,37 @@ body {
     background-color: #007BFF;
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* Align items on opposite sides */
+    justify-content: space-between;
     align-items: center;
 }
 
 .features {
     display: block;
-    background-color: #007BFF; /* White background for the features section */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    align-items: center;
-
-    animation: fadeIn 1s ease; /* Animation */
-    max-width: 100%; /* Limit width of the features section */
-    margin: 0 auto; /* Center the section */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .features h2 {
-    margin-bottom: 20px; /* Space below heading */
+    margin-bottom: 20px;
 }
 
 .feature {
-    margin-bottom: 20px; /* Space between features */
-    opacity: 0; /* Start invisible for animation */
-    animation: slideIn 0.5s forwards; /* Slide in effect */
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
 }
 
 .feature h3 {
     margin: 0;
-    color: white; /* Darker color for feature titles */
+    color: white;
 }
 
 .feature p {
-    margin: 5px 0 10px; /* Space around paragraph */
+    margin: 5px 0 10px;
     background-color: #007BFF
 }
 
@@ -68,27 +65,24 @@ body {
 
 .logo-link {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center;
 }
 
-/* Styling for the logo image */
 .logo {
-    width: 50px; /* Adjust as necessary */
+    width: 50px;
     height: auto;
-    margin-right: 10px; /* Space between logo and site name */
+    margin-right: 10px;
 }
 
 .logo:hover {
     transform: scale(1.05);
-    animation: ease-in-out;
 }
 
-/* Styling for the site name */
 .logo-link h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     display: inline;
-    font-size: 1.5rem; /* Adjust size as necessary */
+    font-size: 1.5rem;
     color: #e6efef;
     margin: 0;
 }
@@ -96,20 +90,6 @@ body {
 nav {
     display: flex;
     align-items: center;
-}
-
-/* Adjust the dashboard link to be placed far left */
-nav .dashboard-link {
-    margin-right: auto; /* Pushes it far to the left */
-    margin-left: 0;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-nav .dashboard-link:hover {
-    text-decoration: underline;
-    color: #ffdd57;
 }
 
 nav a {
@@ -120,9 +100,7 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration:solid;
     color: #ebf3f3d8;
-    animation: ease-in-out;
 }
 
 main, .form-section, .features {
@@ -132,9 +110,8 @@ main, .form-section, .features {
     border-radius: 5px;
 }
 
-h1{
+h1 {
     margin-bottom: 20px;
-    box-align: center;
 }
 
 .form-section h2 {
@@ -170,22 +147,6 @@ input, select, textarea, button {
     margin-top: 15px;
 }
 
-.form-section a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.cta-button {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    color: #0056b3;
-    text-decoration: none;
-}
-
 button {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -205,13 +166,11 @@ button:hover {
     background-color: #043971;
 }
 
-/* Ensure the main content area expands and pushes the footer down */
 main {
     flex: 1;
     padding: 20px;
 }
 
-/* Hero Section */
 .hero {
     background: #007BFF;
     color: white;
@@ -223,54 +182,6 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
     margin: 0;
-}
-
-.hero-content p {
-    font-size: 18px;
-    margin: 10px 0 20px;
-}
-
-/* Sections */
-.about, .benefits, .call-to-action {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    margin: 0;
-} 
-
-.benefits h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    margin: 0;
-}
-
-.call-to-action h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 42px;
-    margin: 0;
-}
-
-.about p{
-    font-size: 18px;
-    margin: 10px 0 20px;
-} 
-
-.benefits p{
-    font-size: 18px;
-    margin: 10px 0 20px;
-} 
-
-.call-to-action p {
-    font-size: 18px;
-    margin: 10px 0 20px;
-}
-
-.features .feature {
-    margin-bottom: 20px;
 }
 
 .signup-container {
@@ -344,8 +255,6 @@ main {
     border-radius: 5px;
 }
 
-/* General styling for the SOS button */
-/* Updated styling for a smaller SOS button */
 .sos-button {
     position: fixed;
     bottom: 78px;
@@ -360,21 +269,12 @@ main {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s;
-    
 }
 
-/* Hover effect for SOS button */
 .sos-button:hover {
     transform: scale(1.1);
 }
 
-/* Optional: Active state styling */
-.sos-button:active {
-    background-color: #c9302c;
-}
-
-
-/* Footer fixed at the bottom */
 footer {
     background-color: #007BFF;
     color: white;
@@ -385,42 +285,47 @@ footer {
     position: relative;
 }
 
-/* Image Animation */
-.animated-image {
-    width: 300px; /* Set width for the image */
-    margin: 20px 0; /* Space above and below the image */
-    opacity: 0; /* Start invisible for animation */
-    animation: fadeInUp 1s forwards; /* Animation for image */
-}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .features {
+        padding: 15px;
+    }
 
-/* Keyframe animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    .form-section, .signup-container, .hero-content {
+        padding: 15px;
     }
-    to {
-        opacity: 1;
-    }
-}
 
-@keyframes slideIn {
-    from {
-        transform: translateY(20px); /* Slide from below */
-        opacity: 0; /* Start invisible */
+    .hero-content h2 {
+        font-size: 28px;
     }
-    to {
-        transform: translateY(0); /* End at normal position */
-        opacity: 1; /* Fully visible */
-    }
-}
 
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px); /* Start slightly lower */
-        opacity: 0; /* Start invisible */
+    input, select, textarea, button {
+        width: 90%;
     }
-    to {
-        transform: translateY(0); /* End at normal position */
-        opacity: 1; /* Fully visible */
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .map {
+        height: 200px;
+    }
+
+    .sos-button {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
     }
 }
